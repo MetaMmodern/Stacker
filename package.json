@@ -6,6 +6,9 @@
   "repository": "https://github.com/MetaMmodern/Stacker.git",
   "author": "metamodern <shabanovbunya@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "eslint": "^7.9.0",
     "eslint-plugin-import": "^2.22.0",

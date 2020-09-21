@@ -1,16 +1,14 @@
-import fs from "fs";
+const fs = require("fs");
+const path = require("path");
 
-export default function fileOpener(path) {
+module.exports = function fileOpener(filePath) {
   let fileContent = "";
   try {
-    fs.readFile(path, (err, data) => {
-      if (err) throw err;
-      fileContent = data;
-    });
+    fileContent = fs.readFileSync(path.resolve(filePath)).toString();
   } catch (error) {
     // eslint-disable-next-line no-console
     console.log(error);
     process.exit(666);
   }
   return fileContent;
-}
+};
