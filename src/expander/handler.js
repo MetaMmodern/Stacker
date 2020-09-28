@@ -17,6 +17,10 @@ function handle(arg) {
 }
 
 function getResult() {
+  const stackLength = argsStack.Length;
+  if (stackLength !== 1) {
+    throw new Error(`Can't show result: ${stackLength} elements are in stack. Check your syntax.`);
+  }
   return argsStack.pop();
 }
 

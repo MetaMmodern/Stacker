@@ -1,5 +1,5 @@
 function readSyntax(content) {
-  const strings = content.split("\n");
+  const strings = content.split("\n").filter((el) => el !== "");
   const resultingStrings = strings.map((string) => {
     return `handle("${string}")`;
   });

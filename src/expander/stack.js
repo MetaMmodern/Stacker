@@ -14,4 +14,8 @@ module.exports = class Stack {
   push(arg) {
     this.#stack.push(arg);
   }
+
+  get Length() {
+    return this.#stack.length;
+  }
 };
