@@ -1,5 +1,5 @@
 {
-  "name": "Stacker",
+  "name": "stacker",
   "version": "1.0.0",
   "description": "Declarative language",
   "main": "index.js",
